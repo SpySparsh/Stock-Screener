@@ -1,4 +1,4 @@
-# Stock-Screener
+# 📈 Real-Time Small Cap Stock Screener
 
 A personal-use, real-time stock screener tailored for U.S. small-cap equities using the Alpaca Market Data API (IEX feed). It dynamically filters and streams only the most relevant tickers using key intraday trading metrics, including 5-min Relative Volume, Gap %, HOD breaks, and halt detection.
 
