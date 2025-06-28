@@ -1,4 +1,4 @@
-![Screenshot (297)](https://github.com/user-attachments/assets/45450923-0f2b-424d-b271-e6d82e369ee2)# Stock-Screener
+# Stock-Screener
 
 A personal-use, real-time stock screener tailored for U.S. small-cap equities using the Alpaca Market Data API (IEX feed). It dynamically filters and streams only the most relevant tickers using key intraday trading metrics, including 5-min Relative Volume, Gap %, HOD breaks, and halt detection.
 
