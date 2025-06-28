@@ -1,4 +1,4 @@
-# Stock-Screener
+![Screenshot (297)](https://github.com/user-attachments/assets/45450923-0f2b-424d-b271-e6d82e369ee2)# Stock-Screener
 
 A personal-use, real-time stock screener tailored for U.S. small-cap equities using the Alpaca Market Data API (IEX feed). It dynamically filters and streams only the most relevant tickers using key intraday trading metrics, including 5-min Relative Volume, Gap %, HOD breaks, and halt detection.
 
@@ -185,6 +185,24 @@ Data starts at 8:00 AM ET (premarket); no full 4:00 AM coverage
 
 Not intended for production use or financial decisions
 
-## 📸 Screenshot (Optional)
-You can upload a UI screenshot here (table with live trades)
+## 📸 Screenshot
+![Screenshot (297)](https://github.com/user-attachments/assets/8005e084-839e-4a61-821a-4897d089845c)
+
+![Screenshot (301)](https://github.com/user-attachments/assets/d7d2a526-3710-4909-ab73-7702cf99d846)
+
+## 🤝 Contribution Guidelines
+
+We welcome contributions! If you’d like to improve this project:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m "Added new feature"`).
+4. Push to your fork (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+---
+
+💡 *Built with ❤️ by Sparsh Sharma
+
+🚀 **Happy Coding!**
 
