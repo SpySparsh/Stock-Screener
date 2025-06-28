@@ -4,7 +4,7 @@ A personal-use, real-time stock screener tailored for U.S. small-cap equities us
 
 ⚡ Built for premarket and intraday momentum scanning — inspired by Warrior Trading-style tools.
 
-##🚀 Features
+## 🚀 Features
 Real-Time Trade Streaming via Alpaca's WebSocket (IEX feed)
 
 5-Minute Relative Volume (RVOL) — Scans for current momentum vs historical volume
@@ -21,7 +21,7 @@ Frontend Table UI (React + Tailwind) that updates instantly via Socket.IO
 
 Symbol auto-refresh every minute — stays dynamic without page reload
 
-##🛠 Tech Stack
+## 🛠 Tech Stack
 Layer	Technology
 Backend	Node.js, Express.js, Alpaca API, Socket.IO, WebSocket
 Frontend	React.js, Tailwind CSS, Vite
