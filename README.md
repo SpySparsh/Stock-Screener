@@ -30,7 +30,7 @@ Realtime	WebSocket (Alpaca) + Socket.IO (client/server)
 Scheduling	setTimeout() loop for per-minute scanning
 Others	dotenv, p-limit (concurrency limiter)
 
-##📦 Installation & Setup
+## 📦 Installation & Setup
 ⚠️ Alpaca API (free) account required.
 
 1. Clone this repo
@@ -62,7 +62,7 @@ npm run dev
 ```
 Visit http://localhost:5173
 ```
-##🧠 Architecture Overview
+## 🧠 Architecture Overview
 This screener uses a client-server WebSocket architecture:
 ```
 market-screener/
@@ -93,7 +93,7 @@ market-screener/
      ↓
 [ Live Table with Trade Data ]
 ```
-🧩 Backend (Node.js)
+### 🧩 Backend (Node.js)
 Connects to Alpaca WebSocket for real-time trade data
 
 Every minute:
@@ -112,7 +112,7 @@ Filters stocks based on trading strategy
 
 Emits trade events to the frontend via Socket.IO
 
-🧩 Frontend (React)
+### 🧩 Frontend (React)
 Connects via Socket.IO
 
 Displays a real-time table of trades with:
@@ -123,7 +123,7 @@ Symbol, Price, Size
 
 Strategy tags (HOD Break, Halt Resume)
 
-🧪 Example Filters Used
+### 🧪 Example Filters Used
 Price: $1–20
 
 5-Min RVOL: ≥ 1.0
@@ -136,8 +136,8 @@ Momentum: 5-min % change positive
 
 Premarket Volume: inferred from 5-min bars
 
-##🧠 HOW EACH PART WORKS
-1. 📡 Alpaca Integration
+## 🧠 HOW EACH PART WORKS
+### 1. 📡 Alpaca Integration
 WebSocket (v2/iex)
 Connected during regular trading hours (9:30am–4:00pm ET)
 
@@ -154,7 +154,7 @@ Emits polled data to frontend as a simulated real-time feed
 
 You’re currently using the REST polling approach for 24/7 updates.
 
-2. 🧠 Backend (Node.js + Express + Socket.IO)
+### 2. 🧠 Backend (Node.js + Express + Socket.IO)
 Handles API keys using a .env file securely
 
 Connects to Alpaca API (WebSocket or REST)
@@ -165,7 +165,7 @@ Accepts frontend connections from http://localhost:5173
 
 Also logs key events like connection/authentication for debugging
 
-3. ⚛️ Frontend (React + Vite + Tailwind)
+### 3. ⚛️ Frontend (React + Vite + Tailwind)
 Connects to backend via socket.io-client
 
 Listens for trade events like:
@@ -178,13 +178,13 @@ Renders them into a live-updating table
 Table shows: Symbol, Price, Size, and Timestamp
 
 
-📎 Notes
+## 📎 Notes
 Uses Alpaca's IEX feed (free, not SIP) — suitable for personal projects
 
 Data starts at 8:00 AM ET (premarket); no full 4:00 AM coverage
 
 Not intended for production use or financial decisions
 
-📸 Screenshot (Optional)
+## 📸 Screenshot (Optional)
 You can upload a UI screenshot here (table with live trades)
 
