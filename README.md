@@ -1,17 +1,5 @@
 # Stock-Screener
-market-screener/
-├── client/     ← React app (frontend)
-│   ├── src/
-│   │   ├── main.jsx
-│   │   ├── counter.jsx  ← main component for displaying trades
-│   │   └── style.css
-│   └── index.html
-│
-└── server/     ← Node.js backend
-    ├── index.js         ← Express + Socket.IO + Alpaca API logic
-    ├── .env             ← Alpaca API keys
-    └── package.json
-    📈 Real-Time Small Cap Stock Screener
+
 A personal-use, real-time stock screener tailored for U.S. small-cap equities using the Alpaca Market Data API (IEX feed). It dynamically filters and streams only the most relevant tickers using key intraday trading metrics, including 5-min Relative Volume, Gap %, HOD breaks, and halt detection.
 
 ⚡ Built for premarket and intraday momentum scanning — inspired by Warrior Trading-style tools.
@@ -77,6 +65,21 @@ Visit http://localhost:5173
 🧠 Architecture Overview
 This screener uses a client-server WebSocket architecture:
 ```
+market-screener/
+├── client/     ← React app (frontend)
+│   ├── src/
+│   │   ├── main.jsx
+│   │   ├── counter.jsx  ← main component for displaying trades
+│   │   └── style.css
+│   └── index.html
+│
+└── server/     ← Node.js backend
+    ├── index.js         ← Express + Socket.IO + Alpaca API logic
+    ├── .env             ← Alpaca API keys
+    └── package.json
+    📈 Real-Time Small Cap Stock Screener
+```
+```
 [ Alpaca API ]
      |
      |  (WebSocket OR REST)
@@ -132,6 +135,7 @@ Gap %: configurable
 Momentum: 5-min % change positive
 
 Premarket Volume: inferred from 5-min bars
+
 🧠 HOW EACH PART WORKS
 1. 📡 Alpaca Integration
 WebSocket (v2/iex)
