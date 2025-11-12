@@ -62,6 +62,11 @@ npm run dev
 ```
 Visit http://localhost:5173
 ```
+## 📸 Screenshot
+![Screenshot (297)](https://github.com/user-attachments/assets/8005e084-839e-4a61-821a-4897d089845c)
+
+![Screenshot (301)](https://github.com/user-attachments/assets/d7d2a526-3710-4909-ab73-7702cf99d846)
+
 ## 🧠 Architecture Overview
 This screener uses a client-server WebSocket architecture:
 ```
@@ -184,11 +189,6 @@ Uses Alpaca's IEX feed (free, not SIP) — suitable for personal projects
 Data starts at 8:00 AM ET (premarket); no full 4:00 AM coverage
 
 Not intended for production use or financial decisions
-
-## 📸 Screenshot
-![Screenshot (297)](https://github.com/user-attachments/assets/8005e084-839e-4a61-821a-4897d089845c)
-
-![Screenshot (301)](https://github.com/user-attachments/assets/d7d2a526-3710-4909-ab73-7702cf99d846)
 
 ## 🤝 Contribution Guidelines
 
