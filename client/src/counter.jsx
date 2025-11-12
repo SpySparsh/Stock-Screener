@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:4000');
+const socket = io('https://stock-screener-b6t5.onrender.com');
 
 function App() {
   const [trades, setTrades] = useState([]);
